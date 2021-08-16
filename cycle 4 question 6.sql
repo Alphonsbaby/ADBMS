@@ -14,3 +14,9 @@ CREATE TABLE borrower
 	(cid   INT NOT NULL, lacno INT NOT NULL, FOREIGN KEY(lacno) REFERENCES loan(Lacno), FOREIGN KEY(cid) REFERENCES customer(cid));
 DESCRIBE borrower;
 
+DESCRIBE customer;
+DESCRIBE bank.borrower;
+show tables;
+ DESCRIBE loan;
+ DESCRIBE accounts_in;
+drop table customer,borrower,accounts_in,depositor;
